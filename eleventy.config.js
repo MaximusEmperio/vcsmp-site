@@ -2,6 +2,7 @@ export default function (eleventyConfig) {
   // Copy these folders straight through to the output untouched.
   eleventyConfig.addPassthroughCopy("src/css");
   eleventyConfig.addPassthroughCopy("src/img");
+  eleventyConfig.addPassthroughCopy("src/favicon.ico");
 
   // A tidy human date, e.g. "18 July 2026"
   eleventyConfig.addFilter("readableDate", (dateObj) => {
