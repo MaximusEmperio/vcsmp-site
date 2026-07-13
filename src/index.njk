@@ -1,0 +1,151 @@
+---
+title: Home
+description: A vanilla SMP for the Virtual Congress community.
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }} — VCSMP</title>
+  <meta name="description" content="{{ description }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    /* index-only: full-viewport centering, no scroll */
+    body { display: grid; place-items: center; min-height: 100dvh; overflow: hidden; }
+    .card.hero-card { margin: 0; width: min(26.5rem, 100%); }
+    .hero .foot { margin-top: 1.7rem; padding-top: 0; border-top: none; }
+  </style>
+</head>
+<body>
+
+  <span class="firefly" style="left:12%; top:70%; --dx:50px; --dy:-120px; --dur:16s; --delay:0s"></span>
+  <span class="firefly" style="left:22%; top:35%; --dx:-40px; --dy:-80px; --dur:19s; --delay:4s"></span>
+  <span class="firefly" style="left:78%; top:60%; --dx:-60px; --dy:-100px; --dur:15s; --delay:2s"></span>
+  <span class="firefly" style="left:88%; top:30%; --dx:35px; --dy:-70px; --dur:21s; --delay:7s"></span>
+  <span class="firefly" style="left:55%; top:85%; --dx:25px; --dy:-110px; --dur:18s; --delay:5s"></span>
+  <span class="firefly" style="left:40%; top:18%; --dx:-30px; --dy:-60px; --dur:23s; --delay:9s"></span>
+
+  <div class="card hero-card">
+    <div class="hero">
+      <div class="hero-heart" aria-hidden="true"></div>
+
+      <h1 class="wordmark">vcsmp<span class="dot">.</span></h1>
+      <p class="tagline">virtual congress smp</p>
+
+      <p class="hero-blurb">A Minecraft SMP for the Virtual Congress community. Come build something!</p>
+
+      <button class="ip" id="ipChip" aria-label="Copy server IP play.vcsmp.com">
+        <span>play.vcsmp.com</span>
+        <span class="hint" id="ipHint">click to copy</span>
+      </button>
+
+      <nav class="hero-nav">
+        <a href="https://discord.gg/6UfCKfCqFW">discord</a>
+        <a href="https://map.vcsmp.com">live map</a>
+        <a href="/announcements/">announcements</a>
+      </nav>
+
+      <div class="status" aria-live="polite">
+        <div class="stat">
+          <span class="label">status</span>
+          <span><span class="pip" id="pip"></span><span id="statusText">checking…</span></span>
+        </div>
+        <div class="stat">
+          <span class="label">players</span>
+          <span id="players">—</span>
+        </div>
+        <div class="stat">
+          <span class="label">version</span>
+          <span id="version">—</span>
+        </div>
+        <div class="stat" id="tpsStat" hidden>
+          <span class="label">tps</span>
+          <span id="tps">—</span>
+        </div>
+        <div class="stat" id="uptimeStat" hidden>
+          <span class="label">uptime</span>
+          <span id="uptime">—</span>
+        </div>
+      </div>
+
+      <p class="foot">semi-vanilla · towny · community-run</p>
+    </div>
+  </div>
+
+<script>
+  const chip = document.getElementById('ipChip');
+  const hint = document.getElementById('ipHint');
+  chip.addEventListener('click', async () => {
+    try {
+      await navigator.clipboard.writeText('play.vcsmp.com');
+      chip.classList.add('copied');
+      hint.textContent = 'copied!';
+      setTimeout(() => { chip.classList.remove('copied'); hint.textContent = 'click to copy'; }, 1800);
+    } catch (e) { hint.textContent = 'select & copy'; }
+  });
+
+  const SERVER = 'play.vcsmp.com';
+  const SERVERTAP_URL = null; // e.g. 'https://status.vcsmp.com/v1/server'
+
+  async function fetchStatus() {
+    const pip = document.getElementById('pip');
+    const statusText = document.getElementById('statusText');
+    const players = document.getElementById('players');
+    const version = document.getElementById('version');
+    try {
+      const res = await fetch('https://api.mcsrvstat.us/3/' + SERVER);
+      const data = await res.json();
+      if (data.online) {
+        pip.className = 'pip online';
+        statusText.textContent = 'online';
+        players.textContent = data.players.online + ' / ' + data.players.max;
+        version.textContent = data.version || '—';
+      } else {
+        pip.className = 'pip offline';
+        statusText.textContent = 'asleep';
+        players.textContent = '—';
+        version.textContent = '—';
+      }
+    } catch (e) {
+      pip.className = 'pip';
+      statusText.textContent = 'unknown';
+    }
+  }
+
+  function formatUptime(ms) {
+    const mins = Math.floor(ms / 60000);
+    const d = Math.floor(mins / 1440);
+    const h = Math.floor((mins % 1440) / 60);
+    const m = mins % 60;
+    if (d > 0) return d + 'd ' + h + 'h';
+    if (h > 0) return h + 'h ' + m + 'm';
+    return m + 'm';
+  }
+
+  async function fetchPaperStats() {
+    if (!SERVERTAP_URL) return;
+    try {
+      const res = await fetch(SERVERTAP_URL);
+      const data = await res.json();
+      if (typeof data.tps !== 'undefined') {
+        document.getElementById('tps').textContent = Number(data.tps).toFixed(1);
+        document.getElementById('tpsStat').hidden = false;
+      }
+      if (data.health && typeof data.health.uptime !== 'undefined') {
+        document.getElementById('uptime').textContent = formatUptime(data.health.uptime);
+        document.getElementById('uptimeStat').hidden = false;
+      }
+    } catch (e) {}
+  }
+
+  fetchStatus();
+  fetchPaperStats();
+  setInterval(fetchStatus, 60000);
+  setInterval(fetchPaperStats, 60000);
+</script>
+</body>
+</html>

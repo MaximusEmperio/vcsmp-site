@@ -1,0 +1,11 @@
+---
+layout: base.njk
+---
+<article>
+  <p class="post-meta"><time datetime="{{ date | isoDate }}">{{ date | readableDate }}</time></p>
+  <h1 class="post-title">{{ title }}</h1>
+  <div class="prose">
+    {{ content | safe }}
+  </div>
+  <a class="back" href="/announcements/">← all announcements</a>
+</article>

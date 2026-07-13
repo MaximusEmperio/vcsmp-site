@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }} — VCSMP</title>
+  <meta name="description" content="{{ description or 'Announcements from the Virtual Congress SMP.' }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <span class="firefly" style="left:12%; top:70%; --dx:50px; --dy:-120px; --dur:16s; --delay:0s"></span>
+  <span class="firefly" style="left:22%; top:35%; --dx:-40px; --dy:-80px; --dur:19s; --delay:4s"></span>
+  <span class="firefly" style="left:78%; top:60%; --dx:-60px; --dy:-100px; --dur:15s; --delay:2s"></span>
+  <span class="firefly" style="left:88%; top:30%; --dx:35px; --dy:-70px; --dur:21s; --delay:7s"></span>
+  <span class="firefly" style="left:55%; top:85%; --dx:25px; --dy:-110px; --dur:18s; --delay:5s"></span>
+
+  <div class="card">
+    <header class="masthead">
+      <a class="brand" href="/">vcsmp<span class="dot">.</span></a>
+      <nav>
+        <a href="/announcements/" {% if "/announcements" in page.url %}aria-current="page"{% endif %}>announcements</a>
+        <a href="https://map.vcsmp.com">live map</a>
+        <a href="https://discord.gg/yourinvite">discord</a>
+      </nav>
+    </header>
+
+    {{ content | safe }}
+
+    <p class="foot">semi-vanilla · towny · community-run</p>
+  </div>
+
+</body>
+</html>
