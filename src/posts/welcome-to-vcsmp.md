@@ -9,7 +9,7 @@ Yes! You heard that right: our Minecraft SMP is returning. Here's everything you
 
 ## How do I join?
 
-We've made it as easy as possible to hop on and play, whether you are on a PC or a console. You do not need to download any mods to play: just load up plain old vanilla Minecraft!
+We've made it as easy as possible to hop on and play, whether you're on PC or console. And there's no need to download any mods to play: just load up plain old vanilla Minecraft!
 
 ### Quick connection guide
 
