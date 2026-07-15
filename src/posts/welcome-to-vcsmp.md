@@ -2,10 +2,10 @@
 title: Welcome to VCSMP!
 date: 2026-07-15
 excerpt: Everything you need to know about the epic return of Virtual Congress's official Minecraft SMP!
-image: /img/posts/minecraft.png
+image: /img/posts/terralith.png
 ---
 
-Yes! You heard that right: our Minecraft SMP is returning :D. Here is everything you need to know to get started.
+Yes! You heard that right: our Minecraft SMP is returning. Here's everything you need to know to get started.
 
 ## How do I join?
 
@@ -28,7 +28,7 @@ Yes. We use a whitelist to stop troublemakers from joining and taking a torch to
 
 First and foremost, **all of Virtual Congress's standard rules apply on VCSMP**. This means you can and will be penalised on Virtual Congress for any trouble you cause on the server. Beyond that, we expect everyone to follow these common-sense SMP rules:
 
-* **No griefing or stealing:** tVCSMP is a laid-back, vanilla-focused server, and people put a lot of time into their builds. Taking things from other players' chests without permission or destroying their hard work is strictly prohibited. The penalties for griefing will be severe.
+* **No griefing or stealing:** VCSMP is a laid-back, vanilla-focused server, and people put a lot of time into their builds. Taking things from other players' chests without permission or destroying their hard work is strictly prohibited. The penalties for griefing will be severe.
 * **No lag machines:** Please be mindful of the redstone contraptions you build. Absolutely nothing designed to intentionally cause lag or crash the server is permitted.
 * **No unconsented PvP:** Player-versus-player combat is only allowed if both parties agree to it beforehand.
 * **No hacking or unfair advantages:** The use of x-ray texture packs, hacked clients, or malicious mods ruins the fun for everyone and will result in an immediate ban. Optifine, Sodium, and minimaps are perfectly fine!
@@ -49,7 +49,7 @@ While the server is completely vanilla for you client-side, we are running a few
 * **Vanilla Refresh:** Adds quality-of-life changes like new animations/sounds, crop XP, extra loyal tridents, drop ladders, and totems that save you from the void.
 * **VanillaTweaks:** We run a custom suite of small mechanic changes. (See [VanillaTweaks](https://vanillatweaks.net/picker/datapacks/) for descriptions of each). Our current toggles include:
 	* *Quality of Life:* Multiplayer sleep, fast leaf decay, graves, XP bottling, cauldron mud/concrete, chunk loaders, double shulker shells.
-	* *Customization:* Armor statues, mini blocks, more mob heads, player head drops, name colors, painting picker, custom nether portals.
+	* *Customisation:* Armor statues, mini blocks, more mob heads, player head drops, name colors, painting picker, custom nether portals.
 	* *Mechanics:* Wandering trades, more effective tools, wood stripper, armored elytra, ender chests always drop.
 	* *Anti-Grief:* Anti-ghast, anti-creeper, and anti-enderman griefing.
 
@@ -61,10 +61,14 @@ We have spent considerable time thinking about lag and performance. Because of t
 
 This serves two main purposes:
 1. **Encouraging community:** Minecraft multiplayer is at its best when players actually collaborate. We don't want members essentially playing single-player Minecraft with a chat feature 100,000 blocks away from everyone else!
-2. **Managing lag:** Chunk generation is one of the most taxing tasks a Minecraft server can do. Without a border, multiple players traveling into unloaded chunks with speed (like via Elytra) could cause massive lag spikes. With a pre-generated world, exploring feels buttery smooth. It also allows us to safely push the server view distance up to **16 chunks**!
+2. **Managing lag:** Chunk generation is one of the most taxing tasks a Minecraft server can do. Without a border, multiple players traveling into unloaded chunks with speed (like via Elytra) could cause massive lag spikes. With a pre-generated world, exploring feels buttery smooth. It also allows us to safely push the server view distance up to 16 chunks!
 
 > **Note:** If the community finds that the border is too restrictive over time, we will happily consider increasing the size of the world.
 
 ## Is the End open?
 
-**Not yet!** We want to ensure everyone has a fair chance to participate in the initial dragon fight, so we will be opening the End as an official, scheduled server event soon. Keep an eye out for announcements!
+Not yet! We want to ensure everyone has a fair chance to participate in the initial dragon fight, so we will be opening the End as an official, scheduled server event soon. Keep an eye out for announcements!
+
+# See you on the server!
+
+We are _super duper_ excited to bring VCSMP back and can't wait to see the amazing things the community will create. If you run into any issues getting connected or have any lingering questions, just reach out to the Activity Team.
