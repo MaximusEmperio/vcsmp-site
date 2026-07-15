@@ -65,6 +65,12 @@ This serves two main purposes:
 
 > **Note:** If the community finds that the border is too restrictive over time, we will happily consider increasing the size of the world.
 
+## What was that about a map?
+
+We know how fun it is to see the big picture, so we've added _Squaremap_ to the server! It’s a beautiful, high-detail live viewer of the world that updates in real-time. It’s really fun to zoom out and see the sprawling continents and hidden landscapes of our world. You can start exploring now at [https://map.vcsmp.com](https://map.vcsmp.com).
+
+> **Why not Bluemap or Dynmap?** We did look at other map plugins, some of which offer flashy 3D views. In the end, we went with Squaremap for the same reason we've kept the rest of the server simple: it's lightweight, easy on performance, and doesn't get in the way of the vanilla experience :)
+
 ## Is the End open?
 
 Not yet! We want to ensure everyone has a fair chance to participate in the initial dragon fight, so we will be opening the End as an official, scheduled server event soon. Keep an eye out for announcements!
