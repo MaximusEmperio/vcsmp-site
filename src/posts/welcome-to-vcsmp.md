@@ -2,7 +2,7 @@
 title: Welcome to VCSMP!
 date: 2026-07-15
 excerpt: Everything you need to know about the epic return of Virtual Congress's official Minecraft SMP!
-image: /img/posts/terralith.png
+image: /img/posts/terralith.jpeg
 ---
 
 Yes! You heard that right: our Minecraft SMP is returning. Here's everything you need to know to get started.
