@@ -8,6 +8,11 @@
   <meta property="og:title" content="{{ title }}">
   <meta property="og:description" content="{{ description or excerpt or 'Announcements from the Virtual Congress SMP.' }}">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  {% if image %}
+  <meta property="og:image" content="{{ site.url }}{{ image }}">
+  <meta name="twitter:card" content="summary_large_image">
+  {% endif %}
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
