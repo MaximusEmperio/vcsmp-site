@@ -9,7 +9,7 @@ Yes! You heard that right: our Minecraft SMP is returning. Here's everything you
 
 ## How do I join?
 
-We've made it as easy as possible to hop on and play, whether you're on PC or console. And there's no need to download any mods to play: just load up plain old vanilla Minecraft!
+We've made it as easy as possible to hop on and play, whether you're on PC or console. And there's no need to download any mods to play. Just load up plain ol' vanilla Minecraft!
 
 ### Quick connection guide
 
@@ -20,9 +20,9 @@ We've made it as easy as possible to hop on and play, whether you're on PC or co
 | **Bedrock port** &nbsp;&nbsp; | `19132` (default) |
 | **Version** | `26.1.2` (and onwards) |
 
-### Is there a whitelist?
+### Whitelist
 
-Yes. We use a whitelist to stop troublemakers from joining and taking a torch to everyone's hard work. To be added, just let anyone on the Activity Team know (provide your Java Edition IGN or Xbox Live Gamertag), and they will grant you access to the server as soon as possible.
+We use a whitelist to stop troublemakers from joining and taking a torch to everyone's hard work. To be added, just let anyone on the Activity Team know (provide your Java Edition IGN or Xbox Live Gamertag), and they will grant you access to the server as soon as possible.
 
 ## What are the server rules?
 
