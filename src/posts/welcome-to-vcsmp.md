@@ -42,7 +42,7 @@ Regardless, **griefing is strictly banned**. Because we run server-side plugins 
 ## What datapacks is VCSMP running?
 
 While the server is completely vanilla for you client-side, we are running a few amazing server-side datapacks to overhaul world generation and enhance the multiplayer experience:
-* **Terralith:** Overhauls Minecraft's overworld generation to add new structures and 95+ new biomes.
+* **Terralith:** Overhauls Minecraft's overworld generation to add new structures and [95+ new biomes](https://stardustlabs.miraheze.org/wiki/Terralith#Biomes).
 * **Incendium & Nullscape:** Does exactly what Terralith does, but completely overhauls the Nether and the End, respectively.
 * **Continents:** Reshapes the world so that landmasses are further apart, varying in size and shape.
 * **Structory:** An atmospheric datapack that adds ruins, towers, cottages, graveyards, settlements, boats, and more.
