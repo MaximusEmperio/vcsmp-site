@@ -61,7 +61,7 @@ We have spent considerable time thinking about lag and performance. Because of t
 
 This serves two main purposes:
 1. **Encouraging community:** Minecraft multiplayer is at its best when players actually collaborate. We don't want members essentially playing single-player Minecraft with a chat feature 100,000 blocks away from everyone else!
-2. **Managing lag:** Chunk generation is one of the most taxing tasks a Minecraft server can do. Without a border, multiple players traveling into unloaded chunks with speed (like via Elytra) could cause massive lag spikes. With a pre-generated world, exploring feels buttery smooth. It also allows us to safely push the server view distance up to 16 chunks!
+2. **Managing lag:** Chunk generation is one of the most taxing tasks a Minecraft server can do. Without a border, multiple players traveling into unloaded chunks with speed (like via Elytra) could cause massive lag spikes. With a pre-generated world, exploring feels buttery smooth. It also allows us to safely push the server view distance up!
 
 > **Note:** If the community finds that the border is too restrictive over time, we will happily consider increasing the size of the world.
 
